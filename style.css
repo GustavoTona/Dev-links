@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+
+    /*
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    Diminuir o codigo, com esse resumo a baixo. 
+    color image repeat position/size
+    */
+
+    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+}
+
+body * {
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+#container {
+    width: 360px;
+    margin: 56px auto 0px;
+    /* funciona como um relogio, começa do topo */
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* LISTA DE LINKS */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px 0;
+
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    /* deixou no meio horizontal */
+    align-items: center;
+    /* deixou no meio vertical */
+
+    padding: 16px 24px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    /* para adicionar no safari */
+
+    text-decoration: none;
+    font-weight: 500;
+    /* ou bold */
+
+    transition: background 0.5s;
+    /* ALL transição de tudo, ou coisas especificas   */
+}
+
+/* selector para o botão */
+
+ul li a:hover {
+
+    background: rgba(255, 255, 255, 0.209);
+    border: 1px solid white;
+}
+
+/*  SOCIAL LINKS  */
+
+
+#social-links {
+
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+    font-size: 24px;
+}
+
+#social-links a{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+#social-links a:hover {
+    background:rgba(255, 255, 255, 0.2);
+
+    border-radius: 50%;
+}
+
+footer {
+font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+
+}
